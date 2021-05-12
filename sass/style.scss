@@ -44,14 +44,15 @@ $title-color: #fed136;
   margin: 0 auto;
 }
 
-.wrapper {
+.header {
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/2029594/pexels-photo-2029594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../images/pexels-danila-giancipoli-2029594.jpg");
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
 }
 
 .page-title {
@@ -87,7 +88,6 @@ $title-color: #fed136;
 
 .my-service {
   margin: 50px 0;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -108,12 +108,19 @@ $title-color: #fed136;
 }
 
 .portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   padding: 20px 18% 20px 18%;
 }
 
 .box {
   font-family: $big-text-font;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
 
   p {
     font-family: $article-text-font;
