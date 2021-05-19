@@ -44,14 +44,19 @@ $title-color: #fed136;
   background-repeat: no-repeat;
 }
 
+.page-title-wrapper {
+  height: calc(100vh - 95px);
+}
+
 .page-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   color: #fff;
-  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
   h2 {
     font-family: $title-font;
     font-size: 4rem;
@@ -76,9 +81,11 @@ $title-color: #fed136;
   }
 }
 
-.my-service {
-  display: flex;
-  flex-direction: column;
+.service-wrapper {
+  padding: 50px 0;
+}
+
+.description {
   text-align: center;
 
   h2 {
@@ -91,21 +98,17 @@ $title-color: #fed136;
   }
 }
 
-.service-row {
-  margin: 0 18%;
-  text-align: center;
-}
-
-.portfolio-row {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 20px 18% 20px 18%;
-}
+// .portfolio-row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   text-align: center;
+//   padding: 20px 18% 20px 18%;
+// }
 
 .box {
   font-family: $big-text-font;
   width: 100%;
+  text-align: center;
 
   img {
     width: 100%;
